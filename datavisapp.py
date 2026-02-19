@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-if 'visulaise' not in st.session_state:
+if "visulaise" not in st.session_state:
     st.session_state.visulaise = False
 
 
@@ -25,8 +25,7 @@ if file_uploade is not None:
         cleaned_rows = len(df)
 
         if cleaned_rows != original_rows:
-            st.info(
-                f"🧹 Cleaned {original_rows - cleaned_rows} problematic rows. {cleaned_rows} rows remaining.")
+            st.info( f"🧹 Cleaned {original_rows - cleaned_rows} problematic rows. {cleaned_rows} rows remaining.") # fmt:skip
 
         cols = df.columns.tolist()
         x_label = st.selectbox("Pick the X column (Labels):", cols)
@@ -38,14 +37,15 @@ if file_uploade is not None:
             st.divider()
             if y_label:
                 if x_label in y_label:
-                    st.warning(
-                        "X and Y columns can't be the same! Pick different columns.")
+                    st.warning("X and Y columns can't be the same! Pick different columns.")# fmt:skip
                 else:
                     non_numeric = [
-                        col for col in y_label if not pd.api.types.is_numeric_dtype(df[col])]
+                        col
+                        for col in y_label
+                        if not pd.api.types.is_numeric_dtype(df[col])
+                    ]
                     if non_numeric:
-                        st.warning(
-                            f"These columns are not numeric and can't be plotted: {non_numeric}")
+                        st.warning(f"These columns are not numeric and can't be plotted: {non_numeric}")  # fmt: skip
                         st.snow()
                     else:
                         st.subheader("Visualising your data...")
