@@ -18,6 +18,13 @@ if file_uploade is not None:
 
     try:
         df = pd.read_csv(file_uploade)
+        original_rows = len(df)
+        df = df.drop_duplicates()
+        df = df.dropna()
+        cleaned_rows = len(df)
+        if cleaned_rows != original_rows:
+            st.info(
+                f"🧹 Cleaned {original_rows-cleaned_rows} problematic rows. {cleaned_rows} rows remaining")
         cols = df.columns.tolist()
         x_label = st.selectbox("Pick the X column (Labels):", cols)
         y_label = st.multiselect("Pick the Y columns (Values):", cols)
@@ -27,16 +34,23 @@ if file_uploade is not None:
 
             st.divider()
             if y_label:
+                non_numeric = [
+                    col for col in y_label if not pd.api.types.is_numeric_dtype(df[col])]
+                if non_numeric:
+                    st.warning("Select a numaric values")
+                    st.snow()
+                else:
 
-                st.subheader("Visualising your data...")
-                tab1, tab2 = st.tabs(["Bar graph", "Line graph"])
-                chart_data = df.set_index(x_label)[y_label]
-                with tab1:
+                    st.subheader("Visualising your data...")
+                    tab1, tab2 = st.tabs(["Bar graph", "Line graph"])
+                    chart_data = df.set_index(x_label)[y_label]
+                    with tab1:
 
-                    st.bar_chart(chart_data)
-                with tab2:
-                    st.line_chart(chart_data)
-                st.button("RESET", on_click=reset_all)
+                        st.bar_chart(chart_data)
+                    with tab2:
+                        st.line_chart(chart_data)
+                    st.button("RESET", on_click=reset_all)
+
             else:
 
                 st.warning("Pick at least one Y column to see the magic!")
