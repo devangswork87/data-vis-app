@@ -5,7 +5,7 @@ st.set_page_config(page_title="Data Viz Pro", page_icon="📈")
 
 st.title("📊 Data Viz, Simplified")
 st.subheader("I'm Devang! 👋")
-
+st.sidebar.title("Menu")
 st.write("""
 I'm a Class 12 student out of Jaipur, just trying to make data less of a headache. 
 I built this because let's be real—nobody has time to manually clean CSVs and fight 
@@ -42,3 +42,4 @@ st.write("Try it out: [Live App](https://devang-data-vis.streamlit.app)")
 
 
 st.info("Built with late-night coffee and a lot of debugging. ☕✨")
+
