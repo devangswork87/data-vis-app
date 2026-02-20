@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Data Viz Pro", page_icon="📈")
 
 st.title("📊 Data Viz, Simplified")
-st.subheader("Yo, I'm Devang! 👋")
+st.subheader("I'm Devang! 👋")
 
 st.write("""
 I'm a Class 12 student out of Jaipur, just trying to make data less of a headache. 
@@ -39,5 +39,6 @@ st.divider()
 st.subheader("🔗 Let's Connect")
 st.write("Source Code: [GitHub](https://github.com/devangswork87/data-vis-app)")
 st.write("Try it out: [Live App](https://devang-data-vis.streamlit.app)")
+
 
 st.info("Built with late-night coffee and a lot of debugging. ☕✨")
