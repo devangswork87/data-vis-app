@@ -1,9 +1,6 @@
 import streamlit as st
-st.sidebar.title("Menu")
-
 # Set a cool page config
 st.set_page_config(page_title="Data Viz Pro", page_icon="📈")
-
 st.title("📊 Data Viz, Simplified")
 st.subheader("I'm Devang! 👋")
 
@@ -43,5 +40,6 @@ st.write("Try it out: [Live App](https://devang-data-vis.streamlit.app)")
 
 
 st.info("Built with late-night coffee and a lot of debugging. ☕✨")
+
 
 
