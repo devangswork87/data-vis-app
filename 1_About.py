@@ -36,7 +36,7 @@ st.divider()
 
 st.subheader("🔗 Let's Connect")
 st.write("Source Code: [GitHub](https://github.com/devangswork87/data-vis-app)")
-st.write("Try it out: [Live App](https://devang-data-vis.streamlit.app)")
+st.write("Try it out: [Live App](https://data-vis-app.streamlit.app/)")
 
 
 st.info("Built with late-night coffee and a lot of debugging. ☕✨")
