@@ -17,7 +17,7 @@ st.write("""
 Drop a file and let the app do the heavy lifting:
 * **Auto-Magic Cleaning:** I’ll scrub those messy duplicates and empty rows for you.
 * **Pick & Plot:** Just select your X and Y axes; no coding required.
-* **Visuals that Pop:** Switch between Bar and Line charts instantly.
+* **Visuals that Pop:** Switch between Bar , Line charts and Scatter charts instantly.
 * **Crash-Proof:** I’ve added some defensive logic so the app won't freak out if your data is weird.
 """)
 
