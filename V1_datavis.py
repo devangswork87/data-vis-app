@@ -1,4 +1,4 @@
-limport pandas as pd
+import pandas as pd
 import streamlit as st
 from sklearn.linear_model import LinearRegression
 
