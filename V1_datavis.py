@@ -1,8 +1,5 @@
 import pandas as pd
 import streamlit as st
-from sklearn.linear_model import LinearRegression
-
-
 def data_vis_engine(file_uploaded,key="visualise"):
     try:
         if key not in st.session_state:
