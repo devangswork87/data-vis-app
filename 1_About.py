@@ -14,7 +14,7 @@ st.divider()
 
 st.subheader("🚀 The Game Plan")
 st.write("""
-Drop a file and let the app do the heavy lifting:
+Just upload your CSV and the app handles the rest::
 * **Automatic Data Cleaning:** Drops empty rows and removes duplicates so you don't have to open Excel.
 * **Easy Axis Selection:** Select your X and Y axes from a dropdown and see the result instantly.
 * **Multiple Chart Options:** Switch between Bar , Line charts and Scatter charts instantly.
@@ -23,7 +23,7 @@ Drop a file and let the app do the heavy lifting:
 
 st.divider()
 
-st.subheader("How I built It and what I used")
+st.subheader("What I used:")
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("**Language:** Python 🐍")
