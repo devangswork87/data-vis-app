@@ -15,10 +15,10 @@ st.divider()
 st.subheader("🚀 The Game Plan")
 st.write("""
 Drop a file and let the app do the heavy lifting:
-* Automatic Data Cleaning:Drops empty rows and removes duplicates so you don't have to open Excel.
+* **Automatic Data Cleaning:** Drops empty rows and removes duplicates so you don't have to open Excel.
 * **Easy Axis Selection:** Select your X and Y axes from a dropdown and see the result instantly.
 * **Multiple Chart Options:** Switch between Bar , Line charts and Scatter charts instantly.
-* **Error Handling:**Added some logic to catch common formatting errors so the app doesn't crash on 'weird' files.
+* **Error Handling:** Added some logic to catch common formatting errors so the app doesn't crash on 'weird' files.
 """)
 
 st.divider()
