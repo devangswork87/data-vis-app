@@ -15,15 +15,15 @@ st.divider()
 st.subheader("🚀 The Game Plan")
 st.write("""
 Drop a file and let the app do the heavy lifting:
-* **Auto-Magic Cleaning:** I’ll scrub those messy duplicates and empty rows for you.
-* **Pick & Plot:** Just select your X and Y axes; no coding required.
-* **Visuals that Pop:** Switch between Bar , Line charts and Scatter charts instantly.
-* **Crash-Proof:** I’ve added some defensive logic so the app won't freak out if your data is weird.
+* **Automatic Data Cleaning:**Drops empty rows and removes duplicates so you don't have to open Excel.
+* **Easy Axis Selection:** Select your X and Y axes from a dropdown and see the result instantly.
+* **Multiple Chart Options:** Switch between Bar , Line charts and Scatter charts instantly.
+* **Error Handling:**Added some logic to catch common formatting errors so the app doesn't crash on 'weird' files.
 """)
 
 st.divider()
 
-st.subheader("🧰 The Toolkit")
+st.subheader("How I built It and what I used")
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("**Language:** Python 🐍")
@@ -39,7 +39,7 @@ st.write("Source Code: [GitHub](https://github.com/devangswork87/data-vis-app)")
 st.write("Try it out: [Live App](https://data-vis-app.streamlit.app/)")
 
 
-st.info("Built with late-night coffee and a lot of debugging. ☕✨")
+st.info("A project born from the curiosity of a 16-year-old who just wanted a better way to look at data.")
 
 
 
